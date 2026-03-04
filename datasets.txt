@@ -1,0 +1,22 @@
+# Dataset Sources and Additional Resources
+
+1. Initial Assigned Dataset (Primary Source)
+- Name: Tony Awards Dataset
+- Source: https://datasetsearch.research.google.com/search?src=0&query=tony%20awards&docid=L2cvMTFyYnNid21uMw%3D%3D
+- Purpose: This is the core dataset containing the official list of nominees, winners, categories, and years for the Tony Awards. It serves as the primary basis for all functional requirements.
+
+2. Broadway Theatres Dataset (NYC Open Data)
+- Source: https://data.cityofnewyork.us/Business/Broadway-Theaters/6v4b-7p4b
+- Purpose: Provides official metadata for Broadway venues, including addresses and seating capacities, to fulfill requirements related to the locations of the productions (VenueR1, VenueR2).
+
+3. DBpedia (Linked Open Data)
+- Source: https://dbpedia.org/sparql
+- Purpose: Used to enrich the ontology with biographical data for actors and directors (birth dates, education, etc.) by linking the names in our dataset to the Linked Open Data cloud.
+
+4. IBDB (Internet Broadway Database)
+- Source: https://www.ibdb.com/
+- Purpose: Used as an additional source to verify production genres (Musical vs. Play) and specific artistic roles that might be missing from the primary CSV.
+
+5. MusicBrainz
+- Source: https://musicbrainz.org/
+- Purpose: Provides data regarding original cast recordings for the musicals found in the Tony Awards dataset.

@@ -1,0 +1,15 @@
+# Documentation of Discarded Data Fields
+
+The following fields from the original Tony Awards dataset were discarded during the requirement analysis and ontology design process for the following reasons:
+
+1. 'Unnamed: 0' / 'Row ID': 
+Reason: These are technical indices used for row identification in the CSV file. They carry no semantic meaning regarding the awards, the artists, or the productions.
+
+2. 'Thumbnail Link' / 'Image URL': 
+Reason: External image links are often volatile and prone to becoming "broken links" over time. In a semantic web context, we prioritize linking to stable, persistent identifiers (URIs) like DBpedia or Wikidata rather than hosting transient media URLs.
+
+3. 'Full Text Citation': 
+Reason: This field often contains a concatenated string of information already present in other fields (e.g., "Presented to [Name] for [Production] at the [Year] ceremony"). To avoid redundancy and ensure data normalization, we represent these as separate properties (hasWinner, hasProduction, hasCeremonyYear).
+
+4. 'Source Website': 
+Reason: A generic link to the main Tony Awards website for every entry does not provide unique metadata for individual entities and was removed to keep the data model clean and focused on core entities.

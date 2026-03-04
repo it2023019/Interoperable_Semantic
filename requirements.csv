@@ -1,0 +1,21 @@
+Identifier,"Competency Question / Natural language sentence (fact)",Answer (For Competency Questions),"Status (Proposed, Accepted, Rejected, Deprecated)",Comments (optional),Extracted from (provenance),Relation with other requirements (optional),Associated ontology elements (to be used after ontology conceptualization assignment)
+AwardR1,What is the name of the award category?,"The value of the ""category"" attribute (String)",Proposed,,,AwardCategory
+AwardR2,In which year was the award ceremony held?,"The value of the ""year"" attribute (Integer)",Proposed,,,Ceremony
+AwardR3,Who is the nominee for the award?,"The name of the ""person"" or ""production"" (String)",Proposed,,,Nominee
+AwardR4,Did the nominee win the award?,"The value of the ""winner"" attribute (Boolean)",Proposed,,,isWinner
+ProdR1,What is the title of the production?,"The value of the ""production"" attribute (String)",Proposed,,,Production
+ProdR2,Is the production a Musical or a Play?,"The type of the production (String)",Proposed,,,ProductionType
+ProdR3,How many nominations did a production receive?,"Count of rows associated with the production title",Proposed,,,Production
+PersR1,What is the name of the person nominated?,"The value of the ""nominee"" attribute (String)",Proposed,,,Person
+PersR2,What is the role of the person in the production?,"The role (e.g., Director, Actor, Composer) (String)",Proposed,,,Role
+PersR3,How many Tony awards has a specific person won?,"Count of rows where winner is True for that person",Proposed,,,Person, isWinner
+CerR1,Which ceremony number was it?,"The value of the ""ceremony"" attribute (Integer)",Proposed,,,Ceremony
+CerR2,Where was the ceremony held?,"The location of the ceremony (String)",Proposed,Requires additional data,,Ceremony, Location
+VenueR1,In which theater was the production performed?,"The name of the theater (String)",Proposed,Requires additional data,,Theater
+VenueR2,What is the capacity of the theater?,"The capacity value (Integer)",Proposed,Requires additional data,,Theater, Capacity
+GenreR1,What is the genre of the production?,"The specific genre (e.g., Drama, Comedy) (String)",Proposed,,,Production, Genre
+AwardR5,Which production won Best Musical in a specific year?,"The production title where category is Best Musical and winner is True",Proposed,,,Production, AwardCategory
+AwardR6,List all nominees for Best Leading Actor in a Play.,"List of names for that specific category",Proposed,,,Person, AwardCategory
+AwardR7,Which year had the most award categories?,"The year with the highest unique category count",Proposed,,,Ceremony, AwardCategory
+PersR4,Has an actor been nominated in both Play and Musical categories?,"Cross-reference of person name and production type",Proposed,,,Person, ProductionType
+AwardR8,What are the winners of the Special Tony Awards?,"The list of winners in special categories",Proposed,,,AwardCategory, isWinner

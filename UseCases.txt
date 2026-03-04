@@ -1,0 +1,12 @@
+
+# Use Cases for Tony Awards Ontology
+
+## Use Case 1: Theater History Researcher
+**Goal:** To analyze trends in Tony Awards across different eras and understand the dominance of certain production teams or theaters.
+**Actor:** Theater Historian.
+**Description:** The researcher uses the ontology to query which theaters have hosted the most 'Best Musical' winners over the last 50 years. By linking the Tony Awards dataset with a Theater Location dataset, they can visualize geographic trends in NYC's Broadway district and correlate theater capacity with award success.
+
+## Use Case 2: Broadway Fan Discovery App
+**Goal:** To help fans discover shows and actors based on award history and shared artistic connections.
+**Actor:** Theater Fan.
+**Description:** A user searches for an actor (e.g., Audra McDonald) and wants to see every production they were in that received a Tony nomination. The app uses the ontology to navigate the relationships between the actor, their roles, the productions, and the awards, providing a comprehensive career timeline of accolades.
