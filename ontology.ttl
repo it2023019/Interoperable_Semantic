@@ -1,0 +1,33 @@
+@prefix base: <http://www.owl-ontologies.com/base#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+base: a owl:Ontology ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+base:AwardCategory a owl:Class ;
+    rdfs:label "Award Category" .
+
+base:Ceremony a owl:Class ;
+    rdfs:label "Ceremony" .
+
+base:Person a owl:Class ;
+    rdfs:label "Person" .
+
+base:Production a owl:Class ;
+    rdfs:label "Production" .
+
+base:Theater a owl:Class ;
+    rdfs:label "Theater" .
+
+xsd:boolean a owl:Class ;
+    rdfs:label "boolean" .
+
+xsd:integer a owl:Class ;
+    rdfs:label "integer" .
+
+xsd:string a owl:Class ;
+    rdfs:label "string" .
+
