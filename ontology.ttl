@@ -5,12 +5,22 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
-base: a owl:Ontology ;
-    mod:createdWith <https://chowlk.linkeddata.es/> ;
+<https://w3id.org/tonyawards/ontology#> a owl:Ontology ;
+    owl:versionIRI <https://w3id.org/tonyawards/ontology/1.0.0#> ;
+    owl:versionInfo "1.0.0" ;
     dcterms:title "The Tony Awards Ontology"@en ;
     dcterms:description "An ontology representing the Tony Awards, productions, theaters, and artists."@en ;
-    dcterms:license <http://creativecommons.org/licenses/by/4.0/> .
+    dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:creator "Group7" ;
+    dcterms:created "2026-05-17" ;
+    dcterms:issued "2026-05-17" ;
+    dcterms:publisher "Universidad Politecnica de Madrid" ;
+    vann:preferredNamespacePrefix "tony" ;
+    vann:preferredNamespaceUri "https://w3id.org/tonyawards/ontology#" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
 
 ### --- CLASSES ---
 
@@ -35,7 +45,8 @@ base:Ceremony a owl:Class ;
 
 base:Person a owl:Class ;
     rdfs:label "Person" ;
-    rdfs:comment "An individual involved in a theatrical production."@en .
+    rdfs:comment "An individual involved in a theatrical production."@en ;
+    rdfs:subClassOf foaf:Person .
 
 base:Actor a owl:Class ;
     rdfs:label "Actor" ;
