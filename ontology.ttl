@@ -1,107 +1,152 @@
 @prefix base: <http://www.owl-ontologies.com/base#> .
 @prefix mod: <https://w3id.org/mod#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 
 base: a owl:Ontology ;
-    mod:createdWith <https://chowlk.linkeddata.es/> .
+    mod:createdWith <https://chowlk.linkeddata.es/> ;
+    dcterms:title "The Tony Awards Ontology"@en ;
+    dcterms:description "An ontology representing the Tony Awards, productions, theaters, and artists."@en ;
+    dcterms:license <http://creativecommons.org/licenses/by/4.0/> .
 
+### --- CLASSES ---
 
 base:AwardCategory a owl:Class ;
-    rdfs:label "Award Category" .
+    rdfs:label "Award Category" ;
+    rdfs:comment "A specific category of the Tony Awards."@en .
 
 base:ActingAward a owl:Class ;
     rdfs:label "Acting Award" ;
-    rdfs:subClassOf base:AwardCategory .
+    rdfs:comment "An award given to an actor for their performance."@en ;
+    rdfs:subClassOf base:AwardCategory ;
+    owl:disjointWith base:ProductionAward .
 
 base:ProductionAward a owl:Class ;
     rdfs:label "Production Award" ;
+    rdfs:comment "An award given to a theatrical production."@en ;
     rdfs:subClassOf base:AwardCategory .
 
 base:Ceremony a owl:Class ;
-    rdfs:label "Ceremony" .
+    rdfs:label "Ceremony" ;
+    rdfs:comment "The formal event where Tony Awards are presented."@en .
 
 base:Person a owl:Class ;
-    rdfs:label "Person" .
+    rdfs:label "Person" ;
+    rdfs:comment "An individual involved in a theatrical production."@en .
 
 base:Actor a owl:Class ;
     rdfs:label "Actor" ;
-    rdfs:subClassOf base:Person .
+    rdfs:comment "A person who acts in a theatrical production."@en ;
+    rdfs:subClassOf base:Person ;
+    owl:disjointWith base:Director, base:Composer .
 
 base:Director a owl:Class ;
     rdfs:label "Director" ;
-    rdfs:subClassOf base:Person .
+    rdfs:comment "A person who directs a theatrical production."@en ;
+    rdfs:subClassOf base:Person ;
+    owl:disjointWith base:Composer .
 
 base:Composer a owl:Class ;
     rdfs:label "Composer" ;
+    rdfs:comment "A person who writes music for a theatrical production."@en ;
     rdfs:subClassOf base:Person .
 
 base:Production a owl:Class ;
-    rdfs:label "Production" .
+    rdfs:label "Production" ;
+    rdfs:comment "A theatrical play or musical."@en .
 
 base:Musical a owl:Class ;
     rdfs:label "Musical" ;
-    rdfs:subClassOf base:Production .
+    rdfs:comment "A theatrical production that contains singing and dancing."@en ;
+    rdfs:subClassOf base:Production ;
+    owl:disjointWith base:Play .
 
 base:Play a owl:Class ;
     rdfs:label "Play" ;
+    rdfs:comment "A theatrical production consisting primarily of spoken dialogue."@en ;
     rdfs:subClassOf base:Production .
 
 base:Theater a owl:Class ;
-    rdfs:label "Theater" .
+    rdfs:label "Theater" ;
+    rdfs:comment "A building or venue where theatrical productions are performed."@en .
 
+### --- OBJECT PROPERTIES ---
 
 base:actedIn a owl:ObjectProperty ;
     rdfs:label "acted in" ;
+    rdfs:comment "Links an actor to the production they performed in."@en ;
     rdfs:domain base:Actor ;
-    rdfs:range base:Production .
+    rdfs:range base:Production ;
+    owl:inverseOf base:hasActor .
+
+base:hasActor a owl:ObjectProperty ;
+    rdfs:label "has actor" ;
+    rdfs:comment "Links a production to the actors performing in it."@en ;
+    rdfs:domain base:Production ;
+    rdfs:range base:Actor .
 
 base:performedIn a owl:ObjectProperty ;
     rdfs:label "performed in" ;
+    rdfs:comment "Links a production to the theater where it is staged."@en ;
     rdfs:domain base:Production ;
-    rdfs:range base:Theater .
+    rdfs:range base:Theater ;
+    owl:inverseOf base:hosts .
 
 base:hosts a owl:ObjectProperty ;
     rdfs:label "hosts" ;
+    rdfs:comment "Links a theater to the production it is currently staging."@en ;
     rdfs:domain base:Theater ;
     rdfs:range base:Production .
 
 base:nominatedFor a owl:ObjectProperty ;
     rdfs:label "nominated for" ;
+    rdfs:comment "Indicates the award category for which a person or production is nominated."@en ;
+    rdfs:domain owl:Thing ;
     rdfs:range base:AwardCategory .
 
 base:presentedAt a owl:ObjectProperty ;
     rdfs:label "presented at" ;
+    rdfs:comment "Links an award category to the ceremony where it was given."@en ;
     rdfs:domain base:AwardCategory ;
     rdfs:range base:Ceremony .
 
+### --- DATATYPE PROPERTIES ---
 
 base:title a owl:DatatypeProperty ;
     rdfs:label "title" ;
+    rdfs:comment "The title of the production."@en ;
     rdfs:domain base:Production ;
     rdfs:range xsd:string .
 
 base:name a owl:DatatypeProperty ;
     rdfs:label "name" ;
+    rdfs:comment "The name of the person."@en ;
     rdfs:domain base:Person ;
     rdfs:range xsd:string .
 
 base:isWinner a owl:DatatypeProperty ;
     rdfs:label "is winner" ;
+    rdfs:comment "Indicates whether the nominee won the award."@en ;
+    rdfs:domain owl:Thing ;
     rdfs:range xsd:boolean .
 
 base:year a owl:DatatypeProperty ;
     rdfs:label "year" ;
+    rdfs:comment "The year the ceremony took place."@en ;
     rdfs:domain base:Ceremony ;
     rdfs:range xsd:integer .
 
 base:ceremonyNumber a owl:DatatypeProperty ;
     rdfs:label "ceremony number" ;
+    rdfs:comment "The chronological number of the ceremony (e.g., 70th)."@en ;
     rdfs:domain base:Ceremony ;
     rdfs:range xsd:integer .
 
 base:capacity a owl:DatatypeProperty ;
     rdfs:label "capacity" ;
+    rdfs:comment "The maximum number of audience members a theater can hold."@en ;
     rdfs:domain base:Theater ;
     rdfs:range xsd:integer .
