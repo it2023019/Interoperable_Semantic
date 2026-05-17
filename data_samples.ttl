@@ -1,11 +1,10 @@
 @prefix base: <http://www.owl-ontologies.com/base#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-# Positive Evaluation
+# --- Positive Evaluation  ---
 
-base:Hamilton a base:Production ;
+base:Hamilton a base:Musical ; 
     base:title "Hamilton" ;
-    base:productionType "Musical" ;
     base:isWinner true .
 
 base:Tony2016 a base:Ceremony ;
@@ -15,21 +14,24 @@ base:Tony2016 a base:Ceremony ;
 base:MajesticTheater a base:Theater ;
     base:capacity 1645 .
 
-# Negative Evaluation
+base:LinManuel a base:Actor ; 
+    base:name "Lin-Manuel Miranda" ;
+    base:actedIn base:Hamilton .
 
-# 1
+# --- Negative Evaluation ---
+
+# 1. Invalid data type for year (String instead of Integer)
 base:InvalidCeremony a base:Ceremony ;
     base:year "Two Thousand Twenty" ;
     base:ceremonyNumber 74 .
 
-# 2
-base:InvalidProd a base:Production ;
-    base:title "Some Show" ;
-    base:productionType "Movie" . 
+# 2. Missing title (violates sh:minCount 1)
+base:InvalidProd a base:Play ;
+    base:isWinner true .
 
-# 3
+# 3. Negative capacity (violates sh:minInclusive 1)
 base:InvalidTheater a base:Theater ;
     base:capacity -50 .
 
-# 4: 
+# 4. Missing person name (violates sh:minCount 1)
 base:UnknownPerson a base:Person .
