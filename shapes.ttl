@@ -3,7 +3,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-# 1
+# 1. Validation for Ceremonies
 base:CeremonyShape a sh:NodeShape ;
     sh:targetClass base:Ceremony ;
     sh:property [
@@ -18,7 +18,7 @@ base:CeremonyShape a sh:NodeShape ;
         sh:minCount 1 ;
     ] .
 
-# 2
+# 2. Validation for Productions
 base:ProductionShape a sh:NodeShape ;
     sh:targetClass base:Production ;
     sh:property [
@@ -27,20 +27,12 @@ base:ProductionShape a sh:NodeShape ;
         sh:minCount 1 ;
     ] ;
     sh:property [
-        sh:path base:productionType ;
-        sh:in ("Musical" "Play") ; # Περιορισμός στις τιμές του ProdR2
-    ] .
-
-# 3
-base:AwardResultShape a sh:NodeShape ;
-    sh:targetClass base:Production ; 
-    sh:property [
         sh:path base:isWinner ;
         sh:datatype xsd:boolean ;
         sh:maxCount 1 ;
     ] .
 
-# 4
+# 3. Validation for Theaters
 base:TheaterShape a sh:NodeShape ;
     sh:targetClass base:Theater ;
     sh:property [
@@ -50,11 +42,12 @@ base:TheaterShape a sh:NodeShape ;
         sh:name "Seating capacity" ;
     ] .
 
-# 5
+# 4. Validation for Persons
 base:PersonShape a sh:NodeShape ;
     sh:targetClass base:Person ;
     sh:property [
         sh:path base:name ;
         sh:datatype xsd:string ;
         sh:minLength 2 ;
+        sh:minCount 1 ;
     ] .
