@@ -7,8 +7,17 @@
 base: a owl:Ontology ;
     mod:createdWith <https://chowlk.linkeddata.es/> .
 
+
 base:AwardCategory a owl:Class ;
     rdfs:label "Award Category" .
+
+base:ActingAward a owl:Class ;
+    rdfs:label "Acting Award" ;
+    rdfs:subClassOf base:AwardCategory .
+
+base:ProductionAward a owl:Class ;
+    rdfs:label "Production Award" ;
+    rdfs:subClassOf base:AwardCategory .
 
 base:Ceremony a owl:Class ;
     rdfs:label "Ceremony" .
@@ -16,18 +25,83 @@ base:Ceremony a owl:Class ;
 base:Person a owl:Class ;
     rdfs:label "Person" .
 
+base:Actor a owl:Class ;
+    rdfs:label "Actor" ;
+    rdfs:subClassOf base:Person .
+
+base:Director a owl:Class ;
+    rdfs:label "Director" ;
+    rdfs:subClassOf base:Person .
+
+base:Composer a owl:Class ;
+    rdfs:label "Composer" ;
+    rdfs:subClassOf base:Person .
+
 base:Production a owl:Class ;
     rdfs:label "Production" .
+
+base:Musical a owl:Class ;
+    rdfs:label "Musical" ;
+    rdfs:subClassOf base:Production .
+
+base:Play a owl:Class ;
+    rdfs:label "Play" ;
+    rdfs:subClassOf base:Production .
 
 base:Theater a owl:Class ;
     rdfs:label "Theater" .
 
-xsd:boolean a owl:Class ;
-    rdfs:label "boolean" .
 
-xsd:integer a owl:Class ;
-    rdfs:label "integer" .
+base:actedIn a owl:ObjectProperty ;
+    rdfs:label "acted in" ;
+    rdfs:domain base:Actor ;
+    rdfs:range base:Production .
 
-xsd:string a owl:Class ;
-    rdfs:label "string" .
+base:performedIn a owl:ObjectProperty ;
+    rdfs:label "performed in" ;
+    rdfs:domain base:Production ;
+    rdfs:range base:Theater .
 
+base:hosts a owl:ObjectProperty ;
+    rdfs:label "hosts" ;
+    rdfs:domain base:Theater ;
+    rdfs:range base:Production .
+
+base:nominatedFor a owl:ObjectProperty ;
+    rdfs:label "nominated for" ;
+    rdfs:range base:AwardCategory .
+
+base:presentedAt a owl:ObjectProperty ;
+    rdfs:label "presented at" ;
+    rdfs:domain base:AwardCategory ;
+    rdfs:range base:Ceremony .
+
+
+base:title a owl:DatatypeProperty ;
+    rdfs:label "title" ;
+    rdfs:domain base:Production ;
+    rdfs:range xsd:string .
+
+base:name a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    rdfs:domain base:Person ;
+    rdfs:range xsd:string .
+
+base:isWinner a owl:DatatypeProperty ;
+    rdfs:label "is winner" ;
+    rdfs:range xsd:boolean .
+
+base:year a owl:DatatypeProperty ;
+    rdfs:label "year" ;
+    rdfs:domain base:Ceremony ;
+    rdfs:range xsd:integer .
+
+base:ceremonyNumber a owl:DatatypeProperty ;
+    rdfs:label "ceremony number" ;
+    rdfs:domain base:Ceremony ;
+    rdfs:range xsd:integer .
+
+base:capacity a owl:DatatypeProperty ;
+    rdfs:label "capacity" ;
+    rdfs:domain base:Theater ;
+    rdfs:range xsd:integer .
