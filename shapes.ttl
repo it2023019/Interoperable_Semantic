@@ -1,0 +1,60 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix base: <http://www.owl-ontologies.com/base#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# 1
+base:CeremonyShape a sh:NodeShape ;
+    sh:targetClass base:Ceremony ;
+    sh:property [
+        sh:path base:year ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 1947 ;
+        sh:name "Year of the ceremony" ;
+    ] ;
+    sh:property [
+        sh:path base:ceremonyNumber ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+    ] .
+
+# 2
+base:ProductionShape a sh:NodeShape ;
+    sh:targetClass base:Production ;
+    sh:property [
+        sh:path base:title ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path base:productionType ;
+        sh:in ("Musical" "Play") ; # Περιορισμός στις τιμές του ProdR2
+    ] .
+
+# 3
+base:AwardResultShape a sh:NodeShape ;
+    sh:targetClass base:Production ; 
+    sh:property [
+        sh:path base:isWinner ;
+        sh:datatype xsd:boolean ;
+        sh:maxCount 1 ;
+    ] .
+
+# 4
+base:TheaterShape a sh:NodeShape ;
+    sh:targetClass base:Theater ;
+    sh:property [
+        sh:path base:capacity ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 1 ;
+        sh:name "Seating capacity" ;
+    ] .
+
+# 5
+base:PersonShape a sh:NodeShape ;
+    sh:targetClass base:Person ;
+    sh:property [
+        sh:path base:name ;
+        sh:datatype xsd:string ;
+        sh:minLength 2 ;
+    ] .

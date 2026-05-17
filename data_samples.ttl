@@ -1,0 +1,35 @@
+@prefix base: <http://www.owl-ontologies.com/base#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Positive Evaluation
+
+base:Hamilton a base:Production ;
+    base:title "Hamilton" ;
+    base:productionType "Musical" ;
+    base:isWinner true .
+
+base:Tony2016 a base:Ceremony ;
+    base:year 2016 ;
+    base:ceremonyNumber 70 .
+
+base:MajesticTheater a base:Theater ;
+    base:capacity 1645 .
+
+# Negative Evaluation
+
+# 1
+base:InvalidCeremony a base:Ceremony ;
+    base:year "Two Thousand Twenty" ;
+    base:ceremonyNumber 74 .
+
+# 2
+base:InvalidProd a base:Production ;
+    base:title "Some Show" ;
+    base:productionType "Movie" . 
+
+# 3
+base:InvalidTheater a base:Theater ;
+    base:capacity -50 .
+
+# 4: 
+base:UnknownPerson a base:Person .
