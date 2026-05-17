@@ -1,4 +1,4 @@
-@prefix base: <http://www.owl-ontologies.com/base#> .
+@prefix base: <https://w3id.org/tonyawards/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # --- Positive Evaluation  ---
