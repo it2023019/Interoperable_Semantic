@@ -1,0 +1,436 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/tonyawards/ontology#"
+     xml:base="https://w3id.org/tonyawards/ontology"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/tonyawards/ontology#">
+        <owl:versionIRI rdf:resource="https://w3id.org/tonyawards/ontology/1.0.0#"/>
+        <terms:created>2026-05-17</terms:created>
+        <terms:creator>Group7</terms:creator>
+        <terms:description xml:lang="en">An ontology representing the Tony Awards, productions, theaters, and artists.</terms:description>
+        <terms:issued>2026-05-17</terms:issued>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <terms:publisher>Universidad Politecnica de Madrid</terms:publisher>
+        <terms:title xml:lang="en">The Tony Awards Ontology</terms:title>
+        <vann:preferredNamespacePrefix>tony</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/tonyawards/ontology#</vann:preferredNamespaceUri>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- https://w3id.org/mod#createdWith -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/tonyawards/ontology#actedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tonyawards/ontology#actedIn">
+        <owl:inverseOf rdf:resource="https://w3id.org/tonyawards/ontology#hasActor"/>
+        <rdfs:domain rdf:resource="https://w3id.org/tonyawards/ontology#Actor"/>
+        <rdfs:range rdf:resource="https://w3id.org/tonyawards/ontology#Production"/>
+        <rdfs:comment xml:lang="en">Links an actor to the production they performed in.</rdfs:comment>
+        <rdfs:label>acted in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tonyawards/ontology#hasActor -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tonyawards/ontology#hasActor">
+        <rdfs:domain rdf:resource="https://w3id.org/tonyawards/ontology#Production"/>
+        <rdfs:range rdf:resource="https://w3id.org/tonyawards/ontology#Actor"/>
+        <rdfs:comment xml:lang="en">Links a production to the actors performing in it.</rdfs:comment>
+        <rdfs:label>has actor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tonyawards/ontology#hosts -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tonyawards/ontology#hosts">
+        <rdfs:domain rdf:resource="https://w3id.org/tonyawards/ontology#Theater"/>
+        <rdfs:range rdf:resource="https://w3id.org/tonyawards/ontology#Production"/>
+        <rdfs:comment xml:lang="en">Links a theater to the production it is currently staging.</rdfs:comment>
+        <rdfs:label>hosts</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tonyawards/ontology#nominatedFor -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tonyawards/ontology#nominatedFor">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="https://w3id.org/tonyawards/ontology#AwardCategory"/>
+        <rdfs:comment xml:lang="en">Indicates the award category for which a person or production is nominated.</rdfs:comment>
+        <rdfs:label>nominated for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tonyawards/ontology#performedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tonyawards/ontology#performedIn">
+        <owl:inverseOf rdf:resource="https://w3id.org/tonyawards/ontology#hosts"/>
+        <rdfs:domain rdf:resource="https://w3id.org/tonyawards/ontology#Production"/>
+        <rdfs:range rdf:resource="https://w3id.org/tonyawards/ontology#Theater"/>
+        <rdfs:comment xml:lang="en">Links a production to the theater where it is staged.</rdfs:comment>
+        <rdfs:label>performed in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tonyawards/ontology#presentedAt -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tonyawards/ontology#presentedAt">
+        <rdfs:domain rdf:resource="https://w3id.org/tonyawards/ontology#AwardCategory"/>
+        <rdfs:range rdf:resource="https://w3id.org/tonyawards/ontology#Ceremony"/>
+        <rdfs:comment xml:lang="en">Links an award category to the ceremony where it was given.</rdfs:comment>
+        <rdfs:label>presented at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/tonyawards/ontology#capacity -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/tonyawards/ontology#capacity">
+        <rdfs:domain rdf:resource="https://w3id.org/tonyawards/ontology#Theater"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">The maximum number of audience members a theater can hold.</rdfs:comment>
+        <rdfs:label>capacity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/tonyawards/ontology#ceremonyNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/tonyawards/ontology#ceremonyNumber">
+        <rdfs:domain rdf:resource="https://w3id.org/tonyawards/ontology#Ceremony"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">The chronological number of the ceremony (e.g., 70th).</rdfs:comment>
+        <rdfs:label>ceremony number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/tonyawards/ontology#isWinner -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/tonyawards/ontology#isWinner">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Indicates whether the nominee won the award.</rdfs:comment>
+        <rdfs:label>is winner</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/tonyawards/ontology#name -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/tonyawards/ontology#name">
+        <rdfs:domain rdf:resource="https://w3id.org/tonyawards/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The name of the person.</rdfs:comment>
+        <rdfs:label>name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/tonyawards/ontology#title -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/tonyawards/ontology#title">
+        <rdfs:domain rdf:resource="https://w3id.org/tonyawards/ontology#Production"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The title of the production.</rdfs:comment>
+        <rdfs:label>title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/tonyawards/ontology#year -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/tonyawards/ontology#year">
+        <rdfs:domain rdf:resource="https://w3id.org/tonyawards/ontology#Ceremony"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">The year the ceremony took place.</rdfs:comment>
+        <rdfs:label>year</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- https://w3id.org/tonyawards/ontology#ActingAward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/tonyawards/ontology#ActingAward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tonyawards/ontology#AwardCategory"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/tonyawards/ontology#ProductionAward"/>
+        <rdfs:comment xml:lang="en">An award given to an actor for their performance.</rdfs:comment>
+        <rdfs:label>Acting Award</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tonyawards/ontology#Actor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/tonyawards/ontology#Actor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tonyawards/ontology#Person"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/tonyawards/ontology#Composer"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/tonyawards/ontology#Director"/>
+        <rdfs:comment xml:lang="en">A person who acts in a theatrical production.</rdfs:comment>
+        <rdfs:label>Actor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tonyawards/ontology#AwardCategory -->
+
+
+    <owl:Class rdf:about="https://w3id.org/tonyawards/ontology#AwardCategory">
+        <rdfs:comment xml:lang="en">A specific category of the Tony Awards.</rdfs:comment>
+        <rdfs:label>Award Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tonyawards/ontology#Ceremony -->
+
+
+    <owl:Class rdf:about="https://w3id.org/tonyawards/ontology#Ceremony">
+        <rdfs:comment xml:lang="en">The formal event where Tony Awards are presented.</rdfs:comment>
+        <rdfs:label>Ceremony</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tonyawards/ontology#Composer -->
+
+
+    <owl:Class rdf:about="https://w3id.org/tonyawards/ontology#Composer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tonyawards/ontology#Person"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/tonyawards/ontology#Director"/>
+        <rdfs:comment xml:lang="en">A person who writes music for a theatrical production.</rdfs:comment>
+        <rdfs:label>Composer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tonyawards/ontology#Director -->
+
+
+    <owl:Class rdf:about="https://w3id.org/tonyawards/ontology#Director">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tonyawards/ontology#Person"/>
+        <rdfs:comment xml:lang="en">A person who directs a theatrical production.</rdfs:comment>
+        <rdfs:label>Director</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tonyawards/ontology#Musical -->
+
+
+    <owl:Class rdf:about="https://w3id.org/tonyawards/ontology#Musical">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tonyawards/ontology#Production"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/tonyawards/ontology#Play"/>
+        <rdfs:comment xml:lang="en">A theatrical production that contains singing and dancing.</rdfs:comment>
+        <rdfs:label>Musical</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tonyawards/ontology#Person -->
+
+
+    <owl:Class rdf:about="https://w3id.org/tonyawards/ontology#Person">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:comment xml:lang="en">An individual involved in a theatrical production.</rdfs:comment>
+        <rdfs:label>Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tonyawards/ontology#Play -->
+
+
+    <owl:Class rdf:about="https://w3id.org/tonyawards/ontology#Play">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tonyawards/ontology#Production"/>
+        <rdfs:comment xml:lang="en">A theatrical production consisting primarily of spoken dialogue.</rdfs:comment>
+        <rdfs:label>Play</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tonyawards/ontology#Production -->
+
+
+    <owl:Class rdf:about="https://w3id.org/tonyawards/ontology#Production">
+        <rdfs:comment xml:lang="en">A theatrical play or musical.</rdfs:comment>
+        <rdfs:label>Production</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tonyawards/ontology#ProductionAward -->
+
+
+    <owl:Class rdf:about="https://w3id.org/tonyawards/ontology#ProductionAward">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tonyawards/ontology#AwardCategory"/>
+        <rdfs:comment xml:lang="en">An award given to a theatrical production.</rdfs:comment>
+        <rdfs:label>Production Award</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tonyawards/ontology#Theater -->
+
+
+    <owl:Class rdf:about="https://w3id.org/tonyawards/ontology#Theater">
+        <rdfs:comment xml:lang="en">A building or venue where theatrical productions are performed.</rdfs:comment>
+        <rdfs:label>Theater</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

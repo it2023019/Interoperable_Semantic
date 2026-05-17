@@ -1,0 +1,242 @@
+<https://w3id.org/tonyawards/ontology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/tonyawards/ontology#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/tonyawards/ontology/1.0.0#> .
+<https://w3id.org/tonyawards/ontology#> <http://purl.org/dc/terms/created> "2026-05-17" .
+<https://w3id.org/tonyawards/ontology#> <http://purl.org/dc/terms/creator> "Group7" .
+<https://w3id.org/tonyawards/ontology#> <http://purl.org/dc/terms/description> "An ontology representing the Tony Awards, productions, theaters, and artists."@en .
+<https://w3id.org/tonyawards/ontology#> <http://purl.org/dc/terms/issued> "2026-05-17" .
+<https://w3id.org/tonyawards/ontology#> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/tonyawards/ontology#> <http://purl.org/dc/terms/publisher> "Universidad Politecnica de Madrid" .
+<https://w3id.org/tonyawards/ontology#> <http://purl.org/dc/terms/title> "The Tony Awards Ontology"@en .
+<https://w3id.org/tonyawards/ontology#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "tony" .
+<https://w3id.org/tonyawards/ontology#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/tonyawards/ontology#" .
+<https://w3id.org/tonyawards/ontology#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+<https://w3id.org/tonyawards/ontology#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/tonyawards/ontology#actedIn
+<https://w3id.org/tonyawards/ontology#actedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/tonyawards/ontology#actedIn> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/tonyawards/ontology#hasActor> .
+<https://w3id.org/tonyawards/ontology#actedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/tonyawards/ontology#Actor> .
+<https://w3id.org/tonyawards/ontology#actedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/tonyawards/ontology#Production> .
+<https://w3id.org/tonyawards/ontology#actedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an actor to the production they performed in."@en .
+<https://w3id.org/tonyawards/ontology#actedIn> <http://www.w3.org/2000/01/rdf-schema#label> "acted in" .
+# 
+# https://w3id.org/tonyawards/ontology#hasActor
+<https://w3id.org/tonyawards/ontology#hasActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/tonyawards/ontology#hasActor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/tonyawards/ontology#Production> .
+<https://w3id.org/tonyawards/ontology#hasActor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/tonyawards/ontology#Actor> .
+<https://w3id.org/tonyawards/ontology#hasActor> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a production to the actors performing in it."@en .
+<https://w3id.org/tonyawards/ontology#hasActor> <http://www.w3.org/2000/01/rdf-schema#label> "has actor" .
+# 
+# https://w3id.org/tonyawards/ontology#hosts
+<https://w3id.org/tonyawards/ontology#hosts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/tonyawards/ontology#hosts> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/tonyawards/ontology#Theater> .
+<https://w3id.org/tonyawards/ontology#hosts> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/tonyawards/ontology#Production> .
+<https://w3id.org/tonyawards/ontology#hosts> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a theater to the production it is currently staging."@en .
+<https://w3id.org/tonyawards/ontology#hosts> <http://www.w3.org/2000/01/rdf-schema#label> "hosts" .
+# 
+# https://w3id.org/tonyawards/ontology#nominatedFor
+<https://w3id.org/tonyawards/ontology#nominatedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/tonyawards/ontology#nominatedFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/tonyawards/ontology#nominatedFor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/tonyawards/ontology#AwardCategory> .
+<https://w3id.org/tonyawards/ontology#nominatedFor> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the award category for which a person or production is nominated."@en .
+<https://w3id.org/tonyawards/ontology#nominatedFor> <http://www.w3.org/2000/01/rdf-schema#label> "nominated for" .
+# 
+# https://w3id.org/tonyawards/ontology#performedIn
+<https://w3id.org/tonyawards/ontology#performedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/tonyawards/ontology#performedIn> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/tonyawards/ontology#hosts> .
+<https://w3id.org/tonyawards/ontology#performedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/tonyawards/ontology#Production> .
+<https://w3id.org/tonyawards/ontology#performedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/tonyawards/ontology#Theater> .
+<https://w3id.org/tonyawards/ontology#performedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a production to the theater where it is staged."@en .
+<https://w3id.org/tonyawards/ontology#performedIn> <http://www.w3.org/2000/01/rdf-schema#label> "performed in" .
+# 
+# https://w3id.org/tonyawards/ontology#presentedAt
+<https://w3id.org/tonyawards/ontology#presentedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/tonyawards/ontology#presentedAt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/tonyawards/ontology#AwardCategory> .
+<https://w3id.org/tonyawards/ontology#presentedAt> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/tonyawards/ontology#Ceremony> .
+<https://w3id.org/tonyawards/ontology#presentedAt> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an award category to the ceremony where it was given."@en .
+<https://w3id.org/tonyawards/ontology#presentedAt> <http://www.w3.org/2000/01/rdf-schema#label> "presented at" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/tonyawards/ontology#capacity
+<https://w3id.org/tonyawards/ontology#capacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/tonyawards/ontology#capacity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/tonyawards/ontology#Theater> .
+<https://w3id.org/tonyawards/ontology#capacity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/tonyawards/ontology#capacity> <http://www.w3.org/2000/01/rdf-schema#comment> "The maximum number of audience members a theater can hold."@en .
+<https://w3id.org/tonyawards/ontology#capacity> <http://www.w3.org/2000/01/rdf-schema#label> "capacity" .
+# 
+# https://w3id.org/tonyawards/ontology#ceremonyNumber
+<https://w3id.org/tonyawards/ontology#ceremonyNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/tonyawards/ontology#ceremonyNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/tonyawards/ontology#Ceremony> .
+<https://w3id.org/tonyawards/ontology#ceremonyNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/tonyawards/ontology#ceremonyNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "The chronological number of the ceremony (e.g., 70th)."@en .
+<https://w3id.org/tonyawards/ontology#ceremonyNumber> <http://www.w3.org/2000/01/rdf-schema#label> "ceremony number" .
+# 
+# https://w3id.org/tonyawards/ontology#isWinner
+<https://w3id.org/tonyawards/ontology#isWinner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/tonyawards/ontology#isWinner> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/tonyawards/ontology#isWinner> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/tonyawards/ontology#isWinner> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether the nominee won the award."@en .
+<https://w3id.org/tonyawards/ontology#isWinner> <http://www.w3.org/2000/01/rdf-schema#label> "is winner" .
+# 
+# https://w3id.org/tonyawards/ontology#name
+<https://w3id.org/tonyawards/ontology#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/tonyawards/ontology#name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/tonyawards/ontology#Person> .
+<https://w3id.org/tonyawards/ontology#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/tonyawards/ontology#name> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the person."@en .
+<https://w3id.org/tonyawards/ontology#name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+# 
+# https://w3id.org/tonyawards/ontology#title
+<https://w3id.org/tonyawards/ontology#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/tonyawards/ontology#title> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/tonyawards/ontology#Production> .
+<https://w3id.org/tonyawards/ontology#title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/tonyawards/ontology#title> <http://www.w3.org/2000/01/rdf-schema#comment> "The title of the production."@en .
+<https://w3id.org/tonyawards/ontology#title> <http://www.w3.org/2000/01/rdf-schema#label> "title" .
+# 
+# https://w3id.org/tonyawards/ontology#year
+<https://w3id.org/tonyawards/ontology#year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/tonyawards/ontology#year> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/tonyawards/ontology#Ceremony> .
+<https://w3id.org/tonyawards/ontology#year> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/tonyawards/ontology#year> <http://www.w3.org/2000/01/rdf-schema#comment> "The year the ceremony took place."@en .
+<https://w3id.org/tonyawards/ontology#year> <http://www.w3.org/2000/01/rdf-schema#label> "year" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/tonyawards/ontology#ActingAward
+<https://w3id.org/tonyawards/ontology#ActingAward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tonyawards/ontology#ActingAward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tonyawards/ontology#AwardCategory> .
+<https://w3id.org/tonyawards/ontology#ActingAward> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/tonyawards/ontology#ProductionAward> .
+<https://w3id.org/tonyawards/ontology#ActingAward> <http://www.w3.org/2000/01/rdf-schema#comment> "An award given to an actor for their performance."@en .
+<https://w3id.org/tonyawards/ontology#ActingAward> <http://www.w3.org/2000/01/rdf-schema#label> "Acting Award" .
+# 
+# https://w3id.org/tonyawards/ontology#Actor
+<https://w3id.org/tonyawards/ontology#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tonyawards/ontology#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tonyawards/ontology#Person> .
+<https://w3id.org/tonyawards/ontology#Actor> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/tonyawards/ontology#Composer> .
+<https://w3id.org/tonyawards/ontology#Actor> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/tonyawards/ontology#Director> .
+<https://w3id.org/tonyawards/ontology#Actor> <http://www.w3.org/2000/01/rdf-schema#comment> "A person who acts in a theatrical production."@en .
+<https://w3id.org/tonyawards/ontology#Actor> <http://www.w3.org/2000/01/rdf-schema#label> "Actor" .
+# 
+# https://w3id.org/tonyawards/ontology#AwardCategory
+<https://w3id.org/tonyawards/ontology#AwardCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tonyawards/ontology#AwardCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific category of the Tony Awards."@en .
+<https://w3id.org/tonyawards/ontology#AwardCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Award Category" .
+# 
+# https://w3id.org/tonyawards/ontology#Ceremony
+<https://w3id.org/tonyawards/ontology#Ceremony> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tonyawards/ontology#Ceremony> <http://www.w3.org/2000/01/rdf-schema#comment> "The formal event where Tony Awards are presented."@en .
+<https://w3id.org/tonyawards/ontology#Ceremony> <http://www.w3.org/2000/01/rdf-schema#label> "Ceremony" .
+# 
+# https://w3id.org/tonyawards/ontology#Composer
+<https://w3id.org/tonyawards/ontology#Composer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tonyawards/ontology#Composer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tonyawards/ontology#Person> .
+<https://w3id.org/tonyawards/ontology#Composer> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/tonyawards/ontology#Director> .
+<https://w3id.org/tonyawards/ontology#Composer> <http://www.w3.org/2000/01/rdf-schema#comment> "A person who writes music for a theatrical production."@en .
+<https://w3id.org/tonyawards/ontology#Composer> <http://www.w3.org/2000/01/rdf-schema#label> "Composer" .
+# 
+# https://w3id.org/tonyawards/ontology#Director
+<https://w3id.org/tonyawards/ontology#Director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tonyawards/ontology#Director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tonyawards/ontology#Person> .
+<https://w3id.org/tonyawards/ontology#Director> <http://www.w3.org/2000/01/rdf-schema#comment> "A person who directs a theatrical production."@en .
+<https://w3id.org/tonyawards/ontology#Director> <http://www.w3.org/2000/01/rdf-schema#label> "Director" .
+# 
+# https://w3id.org/tonyawards/ontology#Musical
+<https://w3id.org/tonyawards/ontology#Musical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tonyawards/ontology#Musical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tonyawards/ontology#Production> .
+<https://w3id.org/tonyawards/ontology#Musical> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/tonyawards/ontology#Play> .
+<https://w3id.org/tonyawards/ontology#Musical> <http://www.w3.org/2000/01/rdf-schema#comment> "A theatrical production that contains singing and dancing."@en .
+<https://w3id.org/tonyawards/ontology#Musical> <http://www.w3.org/2000/01/rdf-schema#label> "Musical" .
+# 
+# https://w3id.org/tonyawards/ontology#Person
+<https://w3id.org/tonyawards/ontology#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tonyawards/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<https://w3id.org/tonyawards/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual involved in a theatrical production."@en .
+<https://w3id.org/tonyawards/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
+# 
+# https://w3id.org/tonyawards/ontology#Play
+<https://w3id.org/tonyawards/ontology#Play> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tonyawards/ontology#Play> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tonyawards/ontology#Production> .
+<https://w3id.org/tonyawards/ontology#Play> <http://www.w3.org/2000/01/rdf-schema#comment> "A theatrical production consisting primarily of spoken dialogue."@en .
+<https://w3id.org/tonyawards/ontology#Play> <http://www.w3.org/2000/01/rdf-schema#label> "Play" .
+# 
+# https://w3id.org/tonyawards/ontology#Production
+<https://w3id.org/tonyawards/ontology#Production> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tonyawards/ontology#Production> <http://www.w3.org/2000/01/rdf-schema#comment> "A theatrical play or musical."@en .
+<https://w3id.org/tonyawards/ontology#Production> <http://www.w3.org/2000/01/rdf-schema#label> "Production" .
+# 
+# https://w3id.org/tonyawards/ontology#ProductionAward
+<https://w3id.org/tonyawards/ontology#ProductionAward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tonyawards/ontology#ProductionAward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tonyawards/ontology#AwardCategory> .
+<https://w3id.org/tonyawards/ontology#ProductionAward> <http://www.w3.org/2000/01/rdf-schema#comment> "An award given to a theatrical production."@en .
+<https://w3id.org/tonyawards/ontology#ProductionAward> <http://www.w3.org/2000/01/rdf-schema#label> "Production Award" .
+# 
+# https://w3id.org/tonyawards/ontology#Theater
+<https://w3id.org/tonyawards/ontology#Theater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tonyawards/ontology#Theater> <http://www.w3.org/2000/01/rdf-schema#comment> "A building or venue where theatrical productions are performed."@en .
+<https://w3id.org/tonyawards/ontology#Theater> <http://www.w3.org/2000/01/rdf-schema#label> "Theater" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

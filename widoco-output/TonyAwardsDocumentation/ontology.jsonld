@@ -1,0 +1,431 @@
+[ {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/mod#createdWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2026-05-17"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Group7"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "An ontology representing the Tony Awards, productions, theaters, and artists."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2026-05-17"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "Universidad Politecnica de Madrid"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "The Tony Awards Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "tony"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/tonyawards/ontology#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology/1.0.0#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0.0"
+  } ],
+  "https://w3id.org/mod#createdWith" : [ {
+    "@id" : "https://chowlk.linkeddata.es/"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#ActingAward",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An award given to an actor for their performance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Acting Award"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#AwardCategory"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#ProductionAward"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#Actor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A person who acts in a theatrical production."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#Composer"
+  }, {
+    "@id" : "https://w3id.org/tonyawards/ontology#Director"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#AwardCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A specific category of the Tony Awards."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Award Category"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#Ceremony",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The formal event where Tony Awards are presented."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ceremony"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#Composer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A person who writes music for a theatrical production."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Composer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#Director"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#Director",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A person who directs a theatrical production."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Director"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#Person"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#Musical",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A theatrical production that contains singing and dancing."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Musical"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#Production"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#Play"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual involved in a theatrical production."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#Play",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A theatrical production consisting primarily of spoken dialogue."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Play"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#Production"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#Production",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A theatrical play or musical."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Production"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#ProductionAward",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An award given to a theatrical production."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Production Award"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#AwardCategory"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#Theater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A building or venue where theatrical productions are performed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Theater"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#actedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links an actor to the production they performed in."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "acted in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#Production"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#hasActor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#capacity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The maximum number of audience members a theater can hold."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#Theater"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "capacity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#ceremonyNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The chronological number of the ceremony (e.g., 70th)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#Ceremony"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ceremony number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#hasActor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links a production to the actors performing in it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#Production"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#Actor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#hosts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links a theater to the production it is currently staging."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#Theater"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hosts"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#Production"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#isWinner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates whether the nominee won the award."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is winner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The name of the person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#nominatedFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates the award category for which a person or production is nominated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "nominated for"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#AwardCategory"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#performedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links a production to the theater where it is staged."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#Production"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "performed in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#Theater"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#hosts"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#presentedAt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links an award category to the ceremony where it was given."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#AwardCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "presented at"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#Ceremony"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The title of the production."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#Production"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "title"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tonyawards/ontology#year",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The year the ceremony took place."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/tonyawards/ontology#Ceremony"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "year"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+} ]

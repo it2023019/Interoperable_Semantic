@@ -1,0 +1,628 @@
+<h2 id="crossreference" class="list">Cross-reference for The Tony Awards Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by The Tony Awards Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#ActingAward" title="https://w3id.org/tonyawards/ontology#ActingAward">Acting Award</a></li>
+  <li><a href="#Actor" title="https://w3id.org/tonyawards/ontology#Actor">Actor</a></li>
+  <li><a href="#AwardCategory" title="https://w3id.org/tonyawards/ontology#AwardCategory">Award Category</a></li>
+  <li><a href="#Ceremony" title="https://w3id.org/tonyawards/ontology#Ceremony">Ceremony</a></li>
+  <li><a href="#Composer" title="https://w3id.org/tonyawards/ontology#Composer">Composer</a></li>
+  <li><a href="#Director" title="https://w3id.org/tonyawards/ontology#Director">Director</a></li>
+  <li><a href="#Musical" title="https://w3id.org/tonyawards/ontology#Musical">Musical</a></li>
+  <li><a href="#Person" title="https://w3id.org/tonyawards/ontology#Person">Person</a></li>
+  <li><a href="#Play" title="https://w3id.org/tonyawards/ontology#Play">Play</a></li>
+  <li><a href="#Production" title="https://w3id.org/tonyawards/ontology#Production">Production</a></li>
+  <li><a href="#ProductionAward" title="https://w3id.org/tonyawards/ontology#ProductionAward">Production Award</a></li>
+  <li><a href="#Theater" title="https://w3id.org/tonyawards/ontology#Theater">Theater</a></li>
+ </ul>
+ <div class="entity" id="ActingAward">
+  <h3>Acting Award<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/tonyawards/ontology#ActingAward</p>
+  <div class="comment">
+   <span class="markdown">An award given to an actor for their performance.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#AwardCategory" title="https://w3id.org/tonyawards/ontology#AwardCategory">Award Category</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#ProductionAward" title="https://w3id.org/tonyawards/ontology#ProductionAward">Production Award</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Actor">
+  <h3>Actor<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/tonyawards/ontology#Actor</p>
+  <div class="comment">
+   <span class="markdown">A person who acts in a theatrical production.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Person" title="https://w3id.org/tonyawards/ontology#Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#actedIn" title="https://w3id.org/tonyawards/ontology#actedIn">acted in</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasActor" title="https://w3id.org/tonyawards/ontology#hasActor">has actor</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Composer" title="https://w3id.org/tonyawards/ontology#Composer">Composer</a> <sup class="type-c" title="class">c</sup>, <a href="#Director" title="https://w3id.org/tonyawards/ontology#Director">Director</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="AwardCategory">
+  <h3>Award Category<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/tonyawards/ontology#AwardCategory</p>
+  <div class="comment">
+   <span class="markdown">A specific category of the Tony Awards.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#ActingAward" title="https://w3id.org/tonyawards/ontology#ActingAward">Acting Award</a> <sup class="type-c" title="class">c</sup>, <a href="#ProductionAward" title="https://w3id.org/tonyawards/ontology#ProductionAward">Production Award</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#presentedAt" title="https://w3id.org/tonyawards/ontology#presentedAt">presented at</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#nominatedFor" title="https://w3id.org/tonyawards/ontology#nominatedFor">nominated for</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Ceremony">
+  <h3>Ceremony<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/tonyawards/ontology#Ceremony</p>
+  <div class="comment">
+   <span class="markdown">The formal event where Tony Awards are presented.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#ceremonyNumber" title="https://w3id.org/tonyawards/ontology#ceremonyNumber">ceremony number</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#year" title="https://w3id.org/tonyawards/ontology#year">year</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#presentedAt" title="https://w3id.org/tonyawards/ontology#presentedAt">presented at</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Composer">
+  <h3>Composer<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/tonyawards/ontology#Composer</p>
+  <div class="comment">
+   <span class="markdown">A person who writes music for a theatrical production.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Person" title="https://w3id.org/tonyawards/ontology#Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Actor" title="https://w3id.org/tonyawards/ontology#Actor">Actor</a> <sup class="type-c" title="class">c</sup>, <a href="#Director" title="https://w3id.org/tonyawards/ontology#Director">Director</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Director">
+  <h3>Director<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/tonyawards/ontology#Director</p>
+  <div class="comment">
+   <span class="markdown">A person who directs a theatrical production.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Person" title="https://w3id.org/tonyawards/ontology#Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Actor" title="https://w3id.org/tonyawards/ontology#Actor">Actor</a> <sup class="type-c" title="class">c</sup>, <a href="#Composer" title="https://w3id.org/tonyawards/ontology#Composer">Composer</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Musical">
+  <h3>Musical<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/tonyawards/ontology#Musical</p>
+  <div class="comment">
+   <span class="markdown">A theatrical production that contains singing and dancing.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Production" title="https://w3id.org/tonyawards/ontology#Production">Production</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Play" title="https://w3id.org/tonyawards/ontology#Play">Play</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Person">
+  <h3>Person<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/tonyawards/ontology#Person</p>
+  <div class="comment">
+   <span class="markdown">An individual involved in a theatrical production.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/Person" target="_blank" title="http://xmlns.com/foaf/0.1/Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Actor" title="https://w3id.org/tonyawards/ontology#Actor">Actor</a> <sup class="type-c" title="class">c</sup>, <a href="#Composer" title="https://w3id.org/tonyawards/ontology#Composer">Composer</a> <sup class="type-c" title="class">c</sup>, <a href="#Director" title="https://w3id.org/tonyawards/ontology#Director">Director</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#name" title="https://w3id.org/tonyawards/ontology#name">name</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Play">
+  <h3>Play<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/tonyawards/ontology#Play</p>
+  <div class="comment">
+   <span class="markdown">A theatrical production consisting primarily of spoken dialogue.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Production" title="https://w3id.org/tonyawards/ontology#Production">Production</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Musical" title="https://w3id.org/tonyawards/ontology#Musical">Musical</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Production">
+  <h3>Production<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/tonyawards/ontology#Production</p>
+  <div class="comment">
+   <span class="markdown">A theatrical play or musical.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Musical" title="https://w3id.org/tonyawards/ontology#Musical">Musical</a> <sup class="type-c" title="class">c</sup>, <a href="#Play" title="https://w3id.org/tonyawards/ontology#Play">Play</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasActor" title="https://w3id.org/tonyawards/ontology#hasActor">has actor</a> <sup class="type-op" title="object property">op</sup>, <a href="#performedIn" title="https://w3id.org/tonyawards/ontology#performedIn">performed in</a> <sup class="type-op" title="object property">op</sup>, <a href="#title" title="https://w3id.org/tonyawards/ontology#title">title</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#actedIn" title="https://w3id.org/tonyawards/ontology#actedIn">acted in</a> <sup class="type-op" title="object property">op</sup>, <a href="#hosts" title="https://w3id.org/tonyawards/ontology#hosts">hosts</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ProductionAward">
+  <h3>Production Award<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/tonyawards/ontology#ProductionAward</p>
+  <div class="comment">
+   <span class="markdown">An award given to a theatrical production.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#AwardCategory" title="https://w3id.org/tonyawards/ontology#AwardCategory">Award Category</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#ActingAward" title="https://w3id.org/tonyawards/ontology#ActingAward">Acting Award</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Theater">
+  <h3>Theater<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/tonyawards/ontology#Theater</p>
+  <div class="comment">
+   <span class="markdown">A building or venue where theatrical productions are performed.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#capacity" title="https://w3id.org/tonyawards/ontology#capacity">capacity</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hosts" title="https://w3id.org/tonyawards/ontology#hosts">hosts</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#performedIn" title="https://w3id.org/tonyawards/ontology#performedIn">performed in</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#actedIn" title="https://w3id.org/tonyawards/ontology#actedIn">acted in</a></li>
+  <li><a href="#hasActor" title="https://w3id.org/tonyawards/ontology#hasActor">has actor</a></li>
+  <li><a href="#hosts" title="https://w3id.org/tonyawards/ontology#hosts">hosts</a></li>
+  <li><a href="#nominatedFor" title="https://w3id.org/tonyawards/ontology#nominatedFor">nominated for</a></li>
+  <li><a href="#performedIn" title="https://w3id.org/tonyawards/ontology#performedIn">performed in</a></li>
+  <li><a href="#presentedAt" title="https://w3id.org/tonyawards/ontology#presentedAt">presented at</a></li>
+ </ul>
+ <div class="entity" id="actedIn">
+  <h3>acted in<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/tonyawards/ontology#actedIn</p>
+  <div class="comment">
+   <span class="markdown">Links an actor to the production they performed in.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Actor" title="https://w3id.org/tonyawards/ontology#Actor">Actor</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Production" title="https://w3id.org/tonyawards/ontology#Production">Production</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasActor" title="https://w3id.org/tonyawards/ontology#hasActor">has actor</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasActor">
+  <h3>has actor<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/tonyawards/ontology#hasActor</p>
+  <div class="comment">
+   <span class="markdown">Links a production to the actors performing in it.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Production" title="https://w3id.org/tonyawards/ontology#Production">Production</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Actor" title="https://w3id.org/tonyawards/ontology#Actor">Actor</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#actedIn" title="https://w3id.org/tonyawards/ontology#actedIn">acted in</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hosts">
+  <h3>hosts<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/tonyawards/ontology#hosts</p>
+  <div class="comment">
+   <span class="markdown">Links a theater to the production it is currently staging.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Theater" title="https://w3id.org/tonyawards/ontology#Theater">Theater</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Production" title="https://w3id.org/tonyawards/ontology#Production">Production</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#performedIn" title="https://w3id.org/tonyawards/ontology#performedIn">performed in</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="nominatedFor">
+  <h3>nominated for<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/tonyawards/ontology#nominatedFor</p>
+  <div class="comment">
+   <span class="markdown">Indicates the award category for which a person or production is nominated.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#AwardCategory" title="https://w3id.org/tonyawards/ontology#AwardCategory">Award Category</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="performedIn">
+  <h3>performed in<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/tonyawards/ontology#performedIn</p>
+  <div class="comment">
+   <span class="markdown">Links a production to the theater where it is staged.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Production" title="https://w3id.org/tonyawards/ontology#Production">Production</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Theater" title="https://w3id.org/tonyawards/ontology#Theater">Theater</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hosts" title="https://w3id.org/tonyawards/ontology#hosts">hosts</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="presentedAt">
+  <h3>presented at<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/tonyawards/ontology#presentedAt</p>
+  <div class="comment">
+   <span class="markdown">Links an award category to the ceremony where it was given.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AwardCategory" title="https://w3id.org/tonyawards/ontology#AwardCategory">Award Category</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Ceremony" title="https://w3id.org/tonyawards/ontology#Ceremony">Ceremony</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#capacity" title="https://w3id.org/tonyawards/ontology#capacity">capacity</a></li>
+  <li><a href="#ceremonyNumber" title="https://w3id.org/tonyawards/ontology#ceremonyNumber">ceremony number</a></li>
+  <li><a href="#isWinner" title="https://w3id.org/tonyawards/ontology#isWinner">is winner</a></li>
+  <li><a href="#name" title="https://w3id.org/tonyawards/ontology#name">name</a></li>
+  <li><a href="#title" title="https://w3id.org/tonyawards/ontology#title">title</a></li>
+  <li><a href="#year" title="https://w3id.org/tonyawards/ontology#year">year</a></li>
+ </ul>
+ <div class="entity" id="capacity">
+  <h3>capacity<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/tonyawards/ontology#capacity</p>
+  <div class="comment">
+   <span class="markdown">The maximum number of audience members a theater can hold.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Theater" title="https://w3id.org/tonyawards/ontology#Theater">Theater</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ceremonyNumber">
+  <h3>ceremony number<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/tonyawards/ontology#ceremonyNumber</p>
+  <div class="comment">
+   <span class="markdown">The chronological number of the ceremony (e.g., 70th).</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Ceremony" title="https://w3id.org/tonyawards/ontology#Ceremony">Ceremony</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isWinner">
+  <h3>is winner<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/tonyawards/ontology#isWinner</p>
+  <div class="comment">
+   <span class="markdown">Indicates whether the nominee won the award.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="name">
+  <h3>name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/tonyawards/ontology#name</p>
+  <div class="comment">
+   <span class="markdown">The name of the person.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Person" title="https://w3id.org/tonyawards/ontology#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="title">
+  <h3>title<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/tonyawards/ontology#title</p>
+  <div class="comment">
+   <span class="markdown">The title of the production.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Production" title="https://w3id.org/tonyawards/ontology#Production">Production</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="year">
+  <h3>year<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/tonyawards/ontology#year</p>
+  <div class="comment">
+   <span class="markdown">The year the ceremony took place.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Ceremony" title="https://w3id.org/tonyawards/ontology#Ceremony">Ceremony</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>

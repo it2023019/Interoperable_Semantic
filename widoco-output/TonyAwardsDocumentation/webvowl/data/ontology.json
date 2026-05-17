@@ -1,0 +1,677 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/tonyawards/ontology", "http://xmlns.com/foaf/0.1" ],
+    "title" : {
+      "en" : "The Tony Awards Ontology"
+    },
+    "iri" : "https://w3id.org/tonyawards/ontology#",
+    "version" : "1.0.0",
+    "author" : [ "Group7" ],
+    "description" : {
+      "en" : "An ontology representing the Tony Awards, productions, theaters, and artists."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Group7",
+        "type" : "label"
+      } ],
+      "createdWith" : [ {
+        "identifier" : "createdWith",
+        "language" : "undefined",
+        "value" : "https://chowlk.linkeddata.es/",
+        "type" : "iri"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2026-05-17",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "tony",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "Universidad Politecnica de Madrid",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tonyawards/ontology#",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2026-05-17",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "The Tony Awards Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/tonyawards/ontology#Production",
+    "baseIri" : "https://w3id.org/tonyawards/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Production",
+      "undefined" : "Production"
+    },
+    "subClasses" : [ "7", "8" ],
+    "comment" : {
+      "en" : "A theatrical play or musical."
+    },
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/tonyawards/ontology#AwardCategory",
+    "baseIri" : "https://w3id.org/tonyawards/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AwardCategory",
+      "undefined" : "Award Category"
+    },
+    "subClasses" : [ "14", "15" ],
+    "comment" : {
+      "en" : "A specific category of the Tony Awards."
+    },
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/tonyawards/ontology#ProductionAward",
+    "baseIri" : "https://w3id.org/tonyawards/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProductionAward",
+      "undefined" : "Production Award"
+    },
+    "comment" : {
+      "en" : "An award given to a theatrical production."
+    },
+    "id" : "14",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "https://w3id.org/tonyawards/ontology#Ceremony",
+    "baseIri" : "https://w3id.org/tonyawards/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ceremony",
+      "undefined" : "Ceremony"
+    },
+    "comment" : {
+      "en" : "The formal event where Tony Awards are presented."
+    },
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/tonyawards/ontology#Director",
+    "baseIri" : "https://w3id.org/tonyawards/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Director",
+      "undefined" : "Director"
+    },
+    "comment" : {
+      "en" : "A person who directs a theatrical production."
+    },
+    "id" : "30",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "17",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/tonyawards/ontology#Theater",
+    "baseIri" : "https://w3id.org/tonyawards/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Theater",
+      "undefined" : "Theater"
+    },
+    "comment" : {
+      "en" : "A building or venue where theatrical productions are performed."
+    },
+    "id" : "4"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "10",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/tonyawards/ontology#Person",
+    "baseIri" : "https://w3id.org/tonyawards/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person",
+      "undefined" : "Person"
+    },
+    "subClasses" : [ "27", "25", "30" ],
+    "comment" : {
+      "en" : "An individual involved in a theatrical production."
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "https://w3id.org/tonyawards/ontology#Composer",
+    "baseIri" : "https://w3id.org/tonyawards/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Composer",
+      "undefined" : "Composer"
+    },
+    "comment" : {
+      "en" : "A person who writes music for a theatrical production."
+    },
+    "id" : "25",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/tonyawards/ontology#Actor",
+    "baseIri" : "https://w3id.org/tonyawards/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Actor",
+      "undefined" : "Actor"
+    },
+    "comment" : {
+      "en" : "A person who acts in a theatrical production."
+    },
+    "id" : "27",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/tonyawards/ontology#Musical",
+    "baseIri" : "https://w3id.org/tonyawards/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Musical",
+      "undefined" : "Musical"
+    },
+    "comment" : {
+      "en" : "A theatrical production that contains singing and dancing."
+    },
+    "id" : "7",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/tonyawards/ontology#ActingAward",
+    "baseIri" : "https://w3id.org/tonyawards/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActingAward",
+      "undefined" : "Acting Award"
+    },
+    "comment" : {
+      "en" : "An award given to an actor for their performance."
+    },
+    "id" : "15",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://w3id.org/tonyawards/ontology#Play",
+    "baseIri" : "https://w3id.org/tonyawards/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Play",
+      "undefined" : "Play"
+    },
+    "comment" : {
+      "en" : "A theatrical production consisting primarily of spoken dialogue."
+    },
+    "id" : "8",
+    "superClasses" : [ "6" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "35",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "36",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "39",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "40",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "41",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/tonyawards/ontology#capacity",
+    "baseIri" : "https://w3id.org/tonyawards/ontology",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "capacity",
+      "undefined" : "capacity"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "The maximum number of audience members a theater can hold."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/tonyawards/ontology#nominatedFor",
+    "baseIri" : "https://w3id.org/tonyawards/ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "nominatedFor",
+      "undefined" : "nominated for"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Indicates the award category for which a person or production is nominated."
+    },
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/tonyawards/ontology#performedIn",
+    "inverse" : "13",
+    "baseIri" : "https://w3id.org/tonyawards/ontology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "performedIn",
+      "undefined" : "performed in"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Links a production to the theater where it is staged."
+    },
+    "attributes" : [ "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/tonyawards/ontology#isWinner",
+    "baseIri" : "https://w3id.org/tonyawards/ontology",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "isWinner",
+      "undefined" : "is winner"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Indicates whether the nominee won the award."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/tonyawards/ontology#name",
+    "baseIri" : "https://w3id.org/tonyawards/ontology",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "name",
+      "undefined" : "name"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "The name of the person."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "19"
+  }, {
+    "range" : "11",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "21"
+  }, {
+    "range" : "6",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "22"
+  }, {
+    "range" : "11",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/tonyawards/ontology#hosts",
+    "baseIri" : "https://w3id.org/tonyawards/ontology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hosts",
+      "undefined" : "hosts"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Links a theater to the production it is currently staging."
+    },
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
+    "range" : "1",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
+  }, {
+    "range" : "1",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "range" : "6",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  }, {
+    "range" : "1",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://w3id.org/tonyawards/ontology#hasActor",
+    "baseIri" : "https://w3id.org/tonyawards/ontology",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasActor",
+      "undefined" : "has actor"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Links a production to the actors performing in it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "range" : "30",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "range" : "30",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "range" : "14",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "25",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://w3id.org/tonyawards/ontology#title",
+    "baseIri" : "https://w3id.org/tonyawards/ontology",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "title",
+      "undefined" : "title"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "The title of the production."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://w3id.org/tonyawards/ontology#year",
+    "baseIri" : "https://w3id.org/tonyawards/ontology",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "year",
+      "undefined" : "year"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "The year the ceremony took place."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://w3id.org/tonyawards/ontology#actedIn",
+    "inverse" : "33",
+    "baseIri" : "https://w3id.org/tonyawards/ontology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "actedIn",
+      "undefined" : "acted in"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "Links an actor to the production they performed in."
+    },
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://w3id.org/tonyawards/ontology#ceremonyNumber",
+    "baseIri" : "https://w3id.org/tonyawards/ontology",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "ceremonyNumber",
+      "undefined" : "ceremony number"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "The chronological number of the ceremony (e.g., 70th)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/tonyawards/ontology#presentedAt",
+    "baseIri" : "https://w3id.org/tonyawards/ontology",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "presentedAt",
+      "undefined" : "presented at"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Links an award category to the ceremony where it was given."
+    },
+    "attributes" : [ "object" ],
+    "id" : "45"
+  } ]
+}
